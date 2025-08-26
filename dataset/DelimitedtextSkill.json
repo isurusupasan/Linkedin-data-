@@ -1,0 +1,33 @@
+{
+	"name": "DelimitedtextSkill",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "skills.csv",
+				"container": "biworkshpcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "skill_abr",
+				"type": "String"
+			},
+			{
+				"name": "skill_name",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

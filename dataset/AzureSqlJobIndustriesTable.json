@@ -1,0 +1,26 @@
+{
+	"name": "AzureSqlJobIndustriesTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "job_id",
+				"type": "varchar"
+			},
+			{
+				"name": "industry_id",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Job_Industries"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

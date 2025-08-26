@@ -1,0 +1,33 @@
+{
+	"name": "DelimitedtextJobIndustries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "job_industries.csv",
+				"container": "biworkshpcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "job_id",
+				"type": "String"
+			},
+			{
+				"name": "industry_id",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

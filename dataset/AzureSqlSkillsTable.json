@@ -1,0 +1,26 @@
+{
+	"name": "AzureSqlSkillsTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "skill_abr",
+				"type": "varchar"
+			},
+			{
+				"name": "skill_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Skills"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

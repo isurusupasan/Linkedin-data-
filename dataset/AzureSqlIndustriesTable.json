@@ -1,0 +1,26 @@
+{
+	"name": "AzureSqlIndustriesTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "industry_id",
+				"type": "varchar"
+			},
+			{
+				"name": "industry_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Industries"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
